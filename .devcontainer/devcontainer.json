@@ -11,6 +11,11 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
+	"mounts": [
+		"source=portfolio_node_modules,target=${containerWorkspaceFolder}/code/node_modules,type=volume",
+		"source=portfolio_nuxt,target=${containerWorkspaceFolder}/code/.nuxt,type=volume"
+	],
+
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
 	"postCreateCommand": "./.devcontainer/setup.sh",
@@ -19,14 +24,37 @@
 	// "customizations": {},
 	"customizations": {
 		"vscode": {
+			"settings": {
+				"editor.formatOnSave": true,
+				// Flat Configを有効にする
+				"eslint.useFlatConfig": true,
+				// ESLintによるフォーマットを有効にする
+				"eslint.format.enable": true,
+				// 保存時にESLintの自動修正を実行する
+				"editor.codeActionsOnSave": {
+					"source.fixAll.eslint": "always"
+				},
+				// 対象とするファイルの言語を指定する
+				"eslint.validate": ["javascript", "typescript", "vue"],
+				"[vue]": {
+					"editor.tabSize": 2,
+					"editor.insertSpaces": true,
+					"editor.detectIndentation": false
+				},
+				"[json]": {
+					"editor.tabSize": 2,
+					"editor.insertSpaces": true,
+					"editor.detectIndentation": false
+				}
+			},
 			"extensions": [
 				"Vue.volar",
 				"dbaeumer.vscode-eslint",
-				"esbenp.prettier-vscode",
 				"bradlc.vscode-tailwindcss",
 				"christian-kohler.path-intellisense",
 				"formulahendry.auto-rename-tag",
-				"hollowtree.vue-snippets"
+				"hollowtree.vue-snippets",
+				"wayou.vscode-todo-highlight"
 			]
 		}
 	}
