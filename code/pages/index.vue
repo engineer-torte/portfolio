@@ -44,6 +44,38 @@
           <p>特に、PHP/Laravel、Python を活用したバックエンド開発、GitLab CI/CDなどによる自動化が得意分野。</p>
           <p>好きなことはゲーム。プレイスタイルにもこだわりを持っていて、「自分らしさ」を大切にしています！</p>
         </div>
+        <div class="flex justify-center gap-4">
+          <a
+            href="https://github.com/engineer-torte"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            size="lg"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-primary text-primary hover:text-white transition-colors"
+          >
+            <UIcon name="i-logos-github-icon" />
+          </a>
+          <a
+            href="https://qiita.com/engineer-torte"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Qiita"
+            size="lg"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-primary text-primary hover:text-white transition-colors"
+          >
+            <UIcon name="i-simple-icons-qiita" />
+          </a>
+          <a
+            href="https://discord.gg/j2HguXkq"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Discord"
+            size="lg"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-primary text-primary hover:text-white transition-colors"
+          >
+            <UIcon name="i-logos-discord-icon" />
+          </a>
+        </div>
       </UContainer>
     </section>
 

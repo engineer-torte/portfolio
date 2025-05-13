@@ -14,6 +14,7 @@ export default defineNuxtConfig({
       primary: 'emerald',
       secondary: 'indigo',
     },
+    icons: ['logos', 'simple-icons'],
   },
   compatibilityDate: '2024-11-01',
   nitro: {
