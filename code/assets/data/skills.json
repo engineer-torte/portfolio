@@ -24,6 +24,12 @@
     "description": "DOM操作とかイベントとかを業務（2020年～）でも個人でも経験しました。Web系の開発だと避けて通れないですね。"
   },
   {
+    "name": "TypeScript",
+    "icon": "i-logos-typescript",
+    "variant": "outline",
+    "description": "Nuxt.jsと一緒に触り始めました。型指定はCopilotにぶん投げられないですか？"
+  },
+  {
     "name": "Nuxt.js v3",
     "icon": "i-logos-nuxt-icon",
     "variant": "outline",
