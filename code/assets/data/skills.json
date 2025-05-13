@@ -25,7 +25,7 @@
   },
   {
     "name": "TypeScript",
-    "icon": "i-logos-typescript",
+    "icon": "i-logos-typescript-icon",
     "variant": "outline",
     "description": "Nuxt.jsと一緒に触り始めました。型指定はCopilotにぶん投げられないですか？"
   },
