@@ -1,9 +1,13 @@
 import tailwindcss from '@tailwindcss/vite';
+import { Static } from 'vue';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ['@nuxt/eslint', '@nuxt/icon', '@nuxt/ui'],
   devtools: { enabled: true },
+  app: {
+    baseURL: '/portfolio/',
+  },
   css: ['~/assets/css/main.css'],
   ui: {
     colors: {
@@ -12,6 +16,9 @@ export default defineNuxtConfig({
     },
   },
   compatibilityDate: '2024-11-01',
+  nitro: {
+    preset: 'static',
+  },
   vite: {
     plugins: [
       tailwindcss(),
@@ -27,4 +34,5 @@ export default defineNuxtConfig({
       stylistic: true,
     },
   },
+  target: 'static',
 });
