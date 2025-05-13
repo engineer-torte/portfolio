@@ -1,0 +1,125 @@
+<template>
+  <main class="min-h-screen bg-white text-gray-800 px-4 py-12">
+    <!-- Hero / Introduction -->
+    <section class="text-center pt-24 py-16 odd:bg-emerald-100 border-t border-indigo-300">
+      <UContainer class="max-w-4xl mx-auto px-4 py-16 text-center">
+        <h1 class="text-4xl font-semibold tracking-tight mb-4">
+          kubortfolio: 労力を減らし、可能性を広げる
+        </h1>
+        <p class="text-lg max-w-2xl mx-auto text-gray-600 mb-6">
+          手間を省き、時間を生む。それが自動化の力。
+        </p>
+        <div class="flex justify-center gap-4 mt-16">
+          <UButton
+            v-for="section in sections"
+            :key="section.id"
+            :to="`#${section.id}`"
+            size="lg"
+            color="primary"
+            variant="solid"
+            class="rounded-full px-6"
+          >
+            {{ section.label }}
+          </UButton>
+        </div>
+      </UContainer>
+    </section>
+
+    <!-- About -->
+    <section
+      id="about"
+      class="odd:bg-emerald-100 py-16 border-t border-indigo-300"
+    >
+      <UContainer>
+        <h2 class="text-3xl font-bold mb-2 text-center">
+          {{ profile.name }}
+        </h2>
+        <p class="text-emerald-600 text-lg mb-6 text-center">
+          “自動化で、誰かの「余裕」をつくる人。”
+        </p>
+
+        <div class="text-gray-700 text-left max-w-2xl mx-auto space-y-4">
+          <p>こんにちは、Webエンジニアやってます。</p>
+          <p>日々、手間を減らし、価値を生む仕組みづくりに取り組んでいます。</p>
+          <p>特に、PHP/Laravel、Python を活用したバックエンド開発、GitLab CI/CDなどによる自動化が得意分野。</p>
+          <p>好きなことはゲーム。プレイスタイルにもこだわりを持っていて、「自分らしさ」を大切にしています！</p>
+        </div>
+      </UContainer>
+    </section>
+
+    <!-- Skils -->
+    <section
+      id="skills"
+      class="odd:bg-emerald-100 py-16 border-t border-indigo-300"
+    >
+      <h2 class="text-2xl font-semibold text-center">
+        スキル
+      </h2>
+      <p class="text-gray-600 text-center mt-2 mb-8">
+        スキルバッジに触れてみてください！補足がポップアップします！
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <SkillBadge
+          v-for="(skill, index) in skills"
+          :key="index"
+          :name="skill.name"
+          :icon="skill.icon"
+          :variant="skill.variant"
+          :description="skill.description"
+        />
+      </div>
+    </section>
+
+    <!-- Works / Portfolio -->
+    <section
+      id="works"
+      class="odd:bg-emerald-100 py-16 border-t border-indigo-300"
+    >
+      <h2 class="text-2xl font-semibold text-center mb-8">
+        制作物
+      </h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mx-6">
+        <div
+          v-for="(work, index) in works"
+          :key="index"
+          class="border rounded-2xl p-4 shadow hover:shadow-lg transition"
+        >
+          <h3 class="text-xl font-medium mb-2">
+            {{ work.title }}
+          </h3>
+          <p class="text-sm text-gray-600">
+            {{ work.description }}
+          </p>
+          <a
+            v-if="work.link"
+            :href="work.link"
+            target="_blank"
+            class="mt-2 inline-block text-blue-600 hover:underline"
+          >
+            ▶ 詳細を見る
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</template>
+
+<script setup lang="ts">
+import profile from '@/assets/data/profile.json';
+import sections from '@/assets/data/sections.json';
+import skills from '@/assets/data/skills.json';
+
+const works = [
+  {
+    title: '作品タイトル1',
+    description: 'これは〇〇なWebアプリです。',
+    link: 'https://example.com',
+  },
+  {
+    title: '作品タイトル2',
+    description: 'TypeScriptとNuxtで作ったポートフォリオ。',
+    link: 'https://example.com',
+  },
+  // 追加はここに
+];
+</script>
