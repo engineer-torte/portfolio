@@ -1,0 +1,64 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+	"name": "dev kubortfolio",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	"mounts": [
+		"source=portfolio_node_modules,target=${containerWorkspaceFolder}/code/node_modules,type=volume",
+		"source=portfolio_nuxt,target=${containerWorkspaceFolder}/code/.nuxt,type=volume"
+	],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "yarn install",
+	"postCreateCommand": "./.devcontainer/setup.sh",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"editor.formatOnSave": true,
+				// Flat Configを有効にする
+				"eslint.useFlatConfig": true,
+				// ESLintによるフォーマットを有効にする
+				"eslint.format.enable": true,
+				// 保存時にESLintの自動修正を実行する
+				"editor.codeActionsOnSave": {
+					"source.fixAll.eslint": "always"
+				},
+				// 対象とするファイルの言語を指定する
+				"eslint.validate": ["javascript", "typescript", "vue"],
+				"[vue]": {
+					"editor.tabSize": 2,
+					"editor.insertSpaces": true,
+					"editor.detectIndentation": false
+				},
+				"[json]": {
+					"editor.tabSize": 2,
+					"editor.insertSpaces": true,
+					"editor.detectIndentation": false
+				}
+			},
+			"extensions": [
+				"Vue.volar",
+				"dbaeumer.vscode-eslint",
+				"bradlc.vscode-tailwindcss",
+				"christian-kohler.path-intellisense",
+				"formulahendry.auto-rename-tag",
+				"hollowtree.vue-snippets",
+				"wayou.vscode-todo-highlight"
+			]
+		}
+	}
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}

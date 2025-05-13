@@ -1,0 +1,14 @@
+[
+  {
+    "label": "自己紹介",
+    "id": "about"
+  },
+  {
+    "label": "スキル",
+    "id": "skills"
+  },
+  {
+    "label": "制作物",
+    "id": "works"
+  }
+]

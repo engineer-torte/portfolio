@@ -1,0 +1,44 @@
+[
+  {
+    "name": "PHP",
+    "icon": "i-logos-php",
+    "variant": "solid",
+    "description": "2020年くらいから業務にて経験しています。常にLaravelがセットでした。"
+  },
+  {
+    "name": "Laravel 10",
+    "icon": "i-logos-laravel",
+    "variant": "solid",
+    "description": "2023～2024年に業務でLaravel 10のヘルパーを活用して開発していました。"
+  },
+  {
+    "name": "Python 3",
+    "icon": "i-logos-python",
+    "variant": "solid",
+    "description": "業務では2024年くらいにちょっと触れました。ちょっとしたローカルスクリプトはPythonで書くのが好きです。専門学校時代（2016年）くらいから個人的にWebサーバーを立てたりもしました。"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "i-logos-javascript",
+    "variant": "solid",
+    "description": "DOM操作とかイベントとかを業務（2020年～）でも個人でも経験しました。Web系の開発だと避けて通れないですね。"
+  },
+  {
+    "name": "Nuxt.js v3",
+    "icon": "i-logos-nuxt-icon",
+    "variant": "outline",
+    "description": "ポートフォリオを作るタイミングで挑戦として学びました。"
+  },
+  {
+    "name": "Bootstrap 3~4",
+    "icon": "i-logos-bootstrap",
+    "variant": "outline",
+    "description": "専門学校時代（2016年）で触っていてその経験を2023年頃に業務で生かしリプレース調査をしていました。"
+  },
+  {
+    "name": "jQuery",
+    "icon": "i-logos-jquery",
+    "variant": "outline",
+    "description": "Bootstrapを触っていて同梱されていた頃に利用していました。業務個人どちらも経験あります。"
+  }
+]
