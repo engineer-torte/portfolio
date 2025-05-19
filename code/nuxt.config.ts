@@ -1,5 +1,4 @@
 import tailwindcss from '@tailwindcss/vite';
-import { Static } from 'vue';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -14,7 +13,7 @@ export default defineNuxtConfig({
       primary: 'emerald',
       secondary: 'indigo',
     },
-    icons: ['logos', 'simple-icons'],
+    icons: ['vscode-icons', 'skill-icons'],
   },
   compatibilityDate: '2024-11-01',
   nitro: {
