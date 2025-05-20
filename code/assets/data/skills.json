@@ -66,6 +66,18 @@
     "description": "Bootstrapを触っていて同梱されていた頃に利用していました。業務個人どちらも経験あります。"
   },
   {
+    "name": "C#",
+    "icon": "skill-icons-cs",
+    "variant": "outline",
+    "description": "業務でデスクトップアプリの改修で触れました。usingを使って解放漏れがないようにすることを学びました！"
+  },
+  {
+    "name": "Ruby on Rails",
+    "icon": "skill-icons-rails",
+    "variant": "outline",
+    "description": "業務で一度触れました。効率的に記述するためにGitHubのリポジトリを読み漁っていたことがあります。"
+  },
+  {
     "name": "nginx",
     "icon": "skill-icons-nginx",
     "variant": "outline",
