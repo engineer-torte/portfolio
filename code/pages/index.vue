@@ -102,35 +102,37 @@
       </div>
     </section>
 
-    <!-- Works / Portfolio -->
+    <!-- 個人制作物のコンテンツ -->
     <section
-      id="works"
+      id="personal-projects"
       class="odd:bg-emerald-100 py-16 border-t border-indigo-300"
     >
       <h2 class="text-2xl font-semibold text-center mb-8">
-        制作物
+        個人制作物
       </h2>
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mx-6">
-        <div
+        <WorkCard
+          v-for="(project, index) in projects"
+          :key="index"
+          :item="project"
+        />
+      </div>
+    </section>
+
+    <!-- 業務経験のコンテンツ -->
+    <section
+      id="work-experience"
+      class="odd:bg-emerald-100 py-16 border-t border-indigo-300"
+    >
+      <h2 class="text-2xl font-semibold text-center mb-8">
+        業務経験
+      </h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mx-6">
+        <WorkCard
           v-for="(work, index) in works"
           :key="index"
-          class="border rounded-2xl p-4 shadow hover:shadow-lg transition"
-        >
-          <h3 class="text-xl font-medium mb-2">
-            {{ work.title }}
-          </h3>
-          <p class="text-sm text-gray-600">
-            {{ work.description }}
-          </p>
-          <a
-            v-if="work.link"
-            :href="work.link"
-            target="_blank"
-            class="mt-2 inline-block text-blue-600 hover:underline"
-          >
-            ▶ 詳細を見る
-          </a>
-        </div>
+          :item="work"
+        />
       </div>
     </section>
   </main>
@@ -140,18 +142,6 @@
 import profile from '@/assets/data/profile.json';
 import sections from '@/assets/data/sections.json';
 import skills from '@/assets/data/skills.json';
-
-const works = [
-  {
-    title: '作品タイトル1',
-    description: 'これは〇〇なWebアプリです。',
-    link: 'https://example.com',
-  },
-  {
-    title: '作品タイトル2',
-    description: 'TypeScriptとNuxtで作ったポートフォリオ。',
-    link: 'https://example.com',
-  },
-  // 追加はここに
-];
+import projects from '@/assets/data/personal-projects.json';
+import works from '@/assets/data/work-experience.json';
 </script>
