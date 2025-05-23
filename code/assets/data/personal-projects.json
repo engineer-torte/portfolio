@@ -14,7 +14,7 @@
   {
     "title": "パイモン監視Bot",
     "description": "Discord Botを使って長時間の通話をせっつくBot。",
-    "image": "/images/パイモン監視Bot通知.png",
+    "image": "images/パイモン監視Bot通知.png",
     "details": [
       "だらだらゲームしてしまうところへDiscord Botからつついてもらうことで深夜のゲームしすぎを認識させる役目です。",
       "当時はダラダラするのがよく起こっていたので、すぐ導入できるように使い慣れたPythonで実装しました。",
