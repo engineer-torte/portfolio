@@ -41,7 +41,11 @@
         <div class="text-gray-700 text-left max-w-2xl mx-auto space-y-4">
           <p>こんにちは、Webエンジニアやってます。</p>
           <p>日々、手間を減らし、価値を生む仕組みづくりに取り組んでいます。</p>
-          <p>特に、PHP/Laravel、Python を活用したバックエンド開発、GitLab CI/CDなどによる自動化が得意分野。</p>
+          <p>特に、PHP/Laravel、Python を活用したバックエンド開発、GitLab CI/CDやDevContainerなどによる自動化が得意分野です。</p>
+          <p>1タスクに対してなるべく労力がかからないように考えるようにしています！</p>
+          <p>ただ、長期的に労力がかからなくなるときは最初に工夫することもあります。</p>
+          <p>分からないことはすぐにググるのが癖付いています！</p>
+          <p>最近はChatGPTやMicrosoft Copilotをオトモに調査しています。</p>
           <p>好きなことはゲーム。プレイスタイルにもこだわりを持っていて、「自分らしさ」を大切にしています！</p>
         </div>
         <div class="flex justify-center gap-4">
