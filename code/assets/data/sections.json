@@ -8,7 +8,11 @@
     "id": "skills"
   },
   {
-    "label": "制作物",
-    "id": "works"
+    "label": "個人制作物",
+    "id": "personal-projects"
+  },
+  {
+    "label": "業務経験",
+    "id": "work-experience"
   }
 ]

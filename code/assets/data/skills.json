@@ -1,44 +1,134 @@
 [
   {
     "name": "PHP",
-    "icon": "i-logos-php",
+    "icon": "skill-icons-php-light",
     "variant": "solid",
     "description": "2020年くらいから業務にて経験しています。常にLaravelがセットでした。"
   },
   {
     "name": "Laravel 10",
-    "icon": "i-logos-laravel",
+    "icon": "skill-icons-laravel-light",
     "variant": "solid",
     "description": "2023～2024年に業務でLaravel 10のヘルパーを活用して開発していました。"
   },
   {
     "name": "Python 3",
-    "icon": "i-logos-python",
+    "icon": "skill-icons-python-light",
     "variant": "solid",
     "description": "業務では2024年くらいにちょっと触れました。ちょっとしたローカルスクリプトはPythonで書くのが好きです。専門学校時代（2016年）くらいから個人的にWebサーバーを立てたりもしました。"
   },
   {
     "name": "JavaScript",
-    "icon": "i-logos-javascript",
+    "icon": "skill-icons-javascript",
     "variant": "solid",
     "description": "DOM操作とかイベントとかを業務（2020年～）でも個人でも経験しました。Web系の開発だと避けて通れないですね。"
   },
   {
+    "name": "Markdown",
+    "icon": "skill-icons-markdown-light",
+    "variant": "solid",
+    "description": "ドキュメント書くならNotionやMicrosoft Loopを活用していてMarkdownは慣れています！"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "skill-icons-typescript",
+    "variant": "outline",
+    "description": "Nuxt.jsと一緒に触り始めました。型指定は最近のAIにお任せできますか…？"
+  },
+  {
     "name": "Nuxt.js v3",
-    "icon": "i-logos-nuxt-icon",
+    "icon": "skill-icons-nuxtjs-light",
     "variant": "outline",
     "description": "ポートフォリオを作るタイミングで挑戦として学びました。"
   },
   {
+    "name": "HTML&CSS",
+    "icon": "skill-icons-html",
+    "variant": "outline",
+    "description": "テンプレートエンジンを使うことも多いですが、業務でも個人でもそれなりに使ってます。"
+  },
+  {
+    "name": "Django",
+    "icon": "skill-icons-django",
+    "variant": "outline",
+    "description": "専門学校時代（2016年）に立てたWebアプリはこれでした。業務でも少しだけ触ったことがあります。"
+  },
+  {
     "name": "Bootstrap 3~4",
-    "icon": "i-logos-bootstrap",
+    "icon": "skill-icons-bootstrap",
     "variant": "outline",
     "description": "専門学校時代（2016年）で触っていてその経験を2023年頃に業務で生かしリプレース調査をしていました。"
   },
   {
     "name": "jQuery",
-    "icon": "i-logos-jquery",
+    "icon": "skill-icons-jquery",
     "variant": "outline",
     "description": "Bootstrapを触っていて同梱されていた頃に利用していました。業務個人どちらも経験あります。"
+  },
+  {
+    "name": "C#",
+    "icon": "skill-icons-cs",
+    "variant": "outline",
+    "description": "業務でデスクトップアプリの改修で触れました。usingを使って解放漏れがないようにすることを学びました！"
+  },
+  {
+    "name": "Ruby on Rails",
+    "icon": "skill-icons-rails",
+    "variant": "outline",
+    "description": "業務で一度触れました。効率的に記述するためにGitHubのリポジトリを読み漁っていたことがあります。"
+  },
+  {
+    "name": "nginx",
+    "icon": "skill-icons-nginx",
+    "variant": "outline",
+    "description": "ガッツリ触れている訳ではないですが、Apacheよりは業務・個人で触れていると思います。"
+  },
+  {
+    "name": "Docker",
+    "icon": "skill-icons-docker",
+    "variant": "outline",
+    "description": "ローカル環境と言えばDockerというくらいですが、業務・個人で使ってます。"
+  },
+  {
+    "name": "VS Code",
+    "icon": "vscode-icons-file-type-vscode",
+    "variant": "outline",
+    "description": "テキストエディタはこれが一番好きです。シンプル、カスタマイズしやすい。"
+  },
+  {
+    "name": "DevContainer",
+    "icon": "vscode-icons-file-type-devcontainer",
+    "variant": "outline",
+    "description": "ローカル環境で動かすなら極力使ってます。devcontainer.jsonに使う拡張機能や設定を入れといて開発環境を整えやすくしてます。"
+  },
+  {
+    "name": "GitHub",
+    "icon": "skill-icons-github-light",
+    "variant": "outline",
+    "description": "業務・個人で利用しています。ブランチ運用はGitHub FlowとGit Flowのいいとこ取りみたいな感じです。GitHub Actionsをもっと極めたい…"
+  },
+  {
+    "name": "GitLab",
+    "icon": "skill-icons-gitlab-light",
+    "variant": "outline",
+    "description": "業務で使っていて、先輩がGitHubでやっていた自動デプロイをできないかなーと思ってCI/CDを使って自動デプロイをしていました。"
+  },
+  {
+    "name": "MySQL",
+    "icon": "skill-icons-mysql-light",
+    "variant": "outline",
+    "description": "業務からプライベートでとりあえず使っていたのがMySQLでした。"
+  },
+  {
+    "name": "PostgreSQL",
+    "icon": "skill-icons-postgresql-light",
+    "variant": "outline",
+    "description": "規模が大きめの業務で使っていた覚えがあります。最初に触れたのはMySQLのutf8mb4問題を考えなくてもよくするためにPostgreSQLに移行したプライベートのDjangoプロジェクトでした。"
+  },
+  {
+    "name": "discordbots",
+    "icon": "skill-icons-discordbots",
+    "variant": "outline",
+    "description": "友達サーバーにちょっとしたBotを作って追加しました。"
   }
 ]
