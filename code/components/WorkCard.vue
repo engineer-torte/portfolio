@@ -25,7 +25,8 @@
               <li
                 v-for="(detail, i) in item.details"
                 :key="i"
-                class="text-gray-700"
+                class="text-gray-700 whitespace-pre-line"
+                style="text-indent: -1.5rem; padding-left: 1.5rem;"
               >
                 {{ detail }}
               </li>
